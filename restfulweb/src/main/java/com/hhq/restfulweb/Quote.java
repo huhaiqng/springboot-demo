@@ -1,13 +1,12 @@
-package com.hhq.consumingrest;
+package com.hhq.restfulweb;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties.Value;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Quote {
 
 	private String type;
-	private com.hhq.consumingrest.Value value;
+	private com.hhq.restfulweb.Value value;
 	
 	public Quote() {
 		
@@ -27,13 +26,13 @@ public class Quote {
 
 
 
-	public com.hhq.consumingrest.Value getValue() {
+	public com.hhq.restfulweb.Value getValue() {
 		return value;
 	}
 
 
 
-	public void setValue(com.hhq.consumingrest.Value value) {
+	public void setValue(com.hhq.restfulweb.Value value) {
 		this.value = value;
 	}
 
